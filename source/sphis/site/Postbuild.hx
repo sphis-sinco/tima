@@ -33,8 +33,8 @@ class Postbuild
 	static function printBuildTime():Void
 	{
 		// get buildEnd before fs operations since they are blocking
-		var end:Float = Sys.time();
 		#if sys
+		var end:Float = Sys.time();
 		if (FileSystem.exists(BUILD_TIME_FILE))
 		{
 			log('Build time file "$BUILD_TIME_FILE" found', true);
