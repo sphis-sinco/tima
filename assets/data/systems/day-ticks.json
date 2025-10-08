@@ -2,7 +2,7 @@
   "day_start": 0,
   "day": 36000,
   
-  "mid-day": 72000,
+  "mid_day": 72000,
 
   "night": 108000,
   "night_end": 144000

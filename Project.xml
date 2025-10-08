@@ -33,7 +33,11 @@
 	<set name="BUILD_DIR" value="export/release" unless="debug"/>
 
 	<source path="source" />
+	<!-- <source path="Project.xml" /> -->
 	<assets path="assets" />
+	
+	<prebuild haxe="source/sphis/site/Prebuild.hx"/>
+	<postbuild haxe="source/sphis/site/Postbuild.hx"/>
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
@@ -49,9 +53,8 @@
 	<!--<haxelib name="nape-haxe4" />-->
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
-	
-	<prebuild haxe="source/sphis/site/Prebuild.hx"/>
-	<postbuild haxe="source/sphis/site/Postbuild.hx"/>
+
+	<haxeflag name="--macro" value="include('sphis.tima')" />
 
 	<!--Remove the legacy health system-->
 	<haxedef name="FLX_NO_HEALTH" />

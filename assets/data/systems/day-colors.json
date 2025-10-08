@@ -2,7 +2,7 @@
   "day_start": "#2E2340",
   "day": "#64E0FF",
   
-  "mid-day": "#DE7921",
+  "mid_day": "#DE7921",
 
   "night": "#090322",
   "night_end": "#15041F"
