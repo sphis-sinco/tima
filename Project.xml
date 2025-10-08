@@ -49,6 +49,9 @@
 	<!--<haxelib name="nape-haxe4" />-->
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
+	
+	<prebuild haxe="source/sphis/site/Prebuild.hx"/>
+	<postbuild haxe="source/sphis/site/Postbuild.hx"/>
 
 	<!--Remove the legacy health system-->
 	<haxedef name="FLX_NO_HEALTH" />
