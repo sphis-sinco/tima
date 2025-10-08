@@ -1,8 +1,8 @@
 package sphis.tima.play;
 
-import flixel.FlxState;
+import sphis.tima.backend.TickState;
 
-class PlayState extends FlxState
+class PlayState extends TickState
 {
 	override public function create()
 	{

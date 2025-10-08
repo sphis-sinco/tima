@@ -1,10 +1,10 @@
 package sphis.tima;
 
 import flixel.FlxG;
-import flixel.FlxState;
+import sphis.tima.backend.TickState;
 import sphis.tima.play.PlayState;
 
-class InitState extends FlxState
+class InitState extends TickState
 {
 	override public function create()
 	{
