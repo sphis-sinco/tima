@@ -1,4 +1,4 @@
-package;
+package sphis.tima.play;
 
 import flixel.FlxState;
 
