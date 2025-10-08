@@ -9,6 +9,7 @@ class InitState extends TickState
 	override public function create()
 	{
 		super.create();
+		trace('InitState switchState current_tick: $current_tick');
 		FlxG.switchState(() -> new PlayState());
 	}
 
