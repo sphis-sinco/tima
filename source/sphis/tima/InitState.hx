@@ -7,12 +7,14 @@ import sphis.tima.play.PlayState;
 
 class InitState extends TickState
 {
+	final how_many_ticks_is_x_seconds = 0;
+
 	override public function create()
 	{
 		super.create();
 
-		// how many ticks is 1 second
-		new FlxTimer().start(1, t ->
+		// how many ticks is _ seconds
+		new FlxTimer().start(how_many_ticks_is_x_seconds, t ->
 		{
 			trace('InitState switchState current_tick: $current_tick');
 			FlxG.switchState(() -> new PlayState());
